@@ -1,0 +1,39 @@
+body{
+    margin: auto;
+    height: 100vh;
+    background-color: gray;
+}
+
+
+.game_container{
+    width: 1000px;
+    height: 650px;
+    border: 2px solid black;
+    position: relative;
+}
+#string{
+    height: 680px;
+    top: -500px;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+  
+}
+
+
+.rock{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    margin: 20px;
+}
+
+#hook{
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: red;
+    bottom: 0px;
+    left: -5px;
+}
