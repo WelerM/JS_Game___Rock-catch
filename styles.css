@@ -1,39 +1,236 @@
 body{
     margin: auto;
     height: 100vh;
-    background-color: gray;
+    background-color: black;
+    overflow: hidden;
 }
 
 
 .game_container{
     width: 1000px;
-    height: 650px;
+    height: 610px;
     border: 2px solid black;
     position: relative;
+    background: linear-gradient( rgba(136, 4, 197, 0.887), rgba(107, 42, 2, 0.836));
+    background: linear-gradient( rgb(169, 7, 190), rgba(107, 42, 2, 0.836));
+    background: linear-gradient( rgba(3, 143, 224, 0.887), rgba(25, 215, 221, 0.836));
 }
+
+.rock_background{
+    background-image: url('./img/bk1.jpeg');
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    bottom: 0px;
+}
+.grass{
+    width: 100%;
+    height: 15px;
+    background-color: rgb(9, 134, 9);
+}
+.surface_edge{
+    width: 100%;
+    height: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.185);
+}
+
+
+
+
+
 #string{
     height: 680px;
     top: -500px;
     width: 10px;
-    background-color: black;
+    background-image: url('./img/steel.jpeg');
+    background-size: cover;
     position: absolute;
-  
 }
 
 
 .rock{
     width: 40px;
     height: 40px;
-    background-color: black;
-    position: absolute;
-    margin: 20px;
+    position: relative;
+}
+.stone{
+    background-image: url('./img/stone.png');
+    background-size:150%;
+    background-position: center;
+    
+}
+.copper{
+    background-image: url('./img/copper.png');
+    background-size:150%;
+    background-position: center;
+}
+.gold{
+    background-image: url('./img/gold.png');
+    background-size:150%;
+    background-position: center;
 }
 
 #hook{
     position: absolute;
     width: 20px;
     height: 10px;
-    background-color: red;
+    background-color: gray;
     bottom: 0px;
     left: -5px;
 }
+.claw_articulation_l{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: rotate(140deg);
+    transition: 0.5s;
+}
+.open_claw{
+    transform: rotate(100deg);
+    transition: 0.5s;
+}
+
+.left_claw{
+    height: 5px;
+    width: 30px;
+    left: 0px;
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    border: 1px solid rgba(0, 0, 0, 0.729);
+}
+.left_hand{
+    height: 15px;
+    width: 5px;
+    position: absolute;
+    right: -5px;
+    bottom: 0px;
+    background-color: rgb(90, 90, 90);
+    transform: rotate(-170deg);
+    border: 1px solid rgba(0, 0, 0, 0.729);
+}
+
+
+
+.claw_articulation_r{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(-43deg);
+}
+
+
+.right_claw{
+    height: 30px;
+    width: 5px;
+    right: 0px;
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    border: 1px solid rgba(0, 0, 0, 0.729);
+    display: flex;
+    justify-content: center;
+}
+
+.right_hand{
+    height: 15px;
+    width: 5px;
+    position: absolute;
+    bottom: -12px;
+    left: -5px;
+    background-color: rgb(90, 90, 90);
+    transform: rotate(60deg);
+    border: 1px solid rgba(0, 0, 0, 0.729);
+}
+
+
+.p{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    opacity: 1;
+    font-weight: bold;
+
+}
+
+.rock_grid_container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+}
+.grid{
+    width: 90px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+
+
+.game_panel{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    gap: 20px;
+
+}
+.score_container{
+    width: 150px;
+    height: 50px;
+    display: flex;
+
+    align-items: center;
+    margin: 20px;
+    gap: 5px;
+}
+#score {
+    font-size: 40px;
+    color: rgb(219, 219, 219);
+    font-family: cursive;
+    
+}
+
+
+.screen_game_over{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: gray;
+    display: none;
+}
+.screen_game_over > *:hover{
+    cursor: pointer;
+}
+
+#btn_new_game{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    font-size: 20px;
+}
+#btn_main_menu{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+}
+
