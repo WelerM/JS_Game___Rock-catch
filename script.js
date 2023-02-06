@@ -34,7 +34,7 @@ const btn_newGame = document.querySelector('#btn_new_game')
 
 
 let grids = document.querySelectorAll('.grid')
-let kok = -1
+let createRockOnGrids = -1
 function deploy_rocks() {
     //Loop that creates and deploys rocks to random positions of the game
     for (let i = 0; i < 10; i++) {
@@ -46,8 +46,8 @@ function deploy_rocks() {
         rock.style.top = random_y_spawn + 'px'
         rock.style.left = random_x_spawn + 'px'
 
-        kok++
-        grids[kok].appendChild(rock)
+        createRockOnGrids++
+        grids[createRockOnGrids].appendChild(rock)
     }
 
     //Sets random id for every rock created
