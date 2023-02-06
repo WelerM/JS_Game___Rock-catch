@@ -25,7 +25,6 @@ const claw_articulation_r = document.querySelector('.claw_articulation_r')
 
 const screen_game_over = document.querySelector('.screen_game_over')
 const btn_newGame = document.querySelector('#btn_new_game')
-const btn_mainMenu = document.querySelector('#btn_main_menu')
 
 
 //==================================================================
@@ -263,12 +262,7 @@ main()
 
 
 btn_newGame.addEventListener('click', ()=>{
-    //f5
+    window.location.reload()
 }
 )
-
-btn_mainMenu.addEventListener('click', ()=>{
-    //f5 not acctualy
-})
-
 
