@@ -5,5 +5,8 @@
 ![rock](https://user-images.githubusercontent.com/99507279/216047353-8b2ef67e-0f72-4989-b7f5-b735f3d20d90.PNG)
 
 
+Link to play it:
+https://welerm.github.io/JS_Game___Rock-catch/
+
 
 Feel free to check other of my game projects:v https://github.com/WelerM/Game-in-JavaScript
